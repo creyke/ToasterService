@@ -1,0 +1,8 @@
+[Bb]in/
+[Oo]bj/
+.vs/
+packages/
+*.user
+*.log
+*.txt
+*.suo
