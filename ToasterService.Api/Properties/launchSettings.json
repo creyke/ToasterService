@@ -1,4 +1,4 @@
-﻿{
+{
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
@@ -19,7 +19,7 @@
     "ToasterService.Api": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "api/values",
+      "launchUrl": "api/toaster/1",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
