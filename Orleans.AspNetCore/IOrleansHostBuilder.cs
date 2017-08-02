@@ -4,6 +4,6 @@
     {
         IOrleansHost Build();
 
-        IOrleansHostBuilder UseStartup<TStartup>() where TStartup : class;
+        IOrleansHostBuilder UseStartup<TStartup>() where TStartup : IOrleansStartup;
     }
 }
