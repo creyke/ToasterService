@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  toasterservice.api:
+    image: toasterservice.api
+    build:
+      context: ./ToasterService.Api
+      dockerfile: Dockerfile
