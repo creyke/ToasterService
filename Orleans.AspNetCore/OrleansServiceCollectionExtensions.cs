@@ -31,11 +31,5 @@ namespace Orleans.AspNetCore
 
             GrainClient.Initialize(config);
         }
-
-        private static bool IsLinux()
-        {
-            // TODO: Improve. Stupid solution. Need to check if in container.
-            return RuntimeInformation.OSDescription.Contains("Linux");
-        }
     }
 }
