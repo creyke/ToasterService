@@ -13,3 +13,4 @@ An example of embedding an Orleans silo in the same process as an ASP.NET Web AP
 3. Streaming of data from and to the Web API, and across a Web API cluster
 4. SignalR backplane implementation similar to [OrleansR](https://github.com/OrleansContrib/OrleansR) possible
 5. Easier introduction to Orleans for traditional Web API developers
+6. No need to deploy and debug a separate actor hosting process.
