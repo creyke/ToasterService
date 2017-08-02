@@ -1,5 +1,5 @@
 # ToasterService
-An example of embedding an Orleans silo in the same process an ASP.NET Web API
+An example of embedding an Orleans silo in the same process as an ASP.NET Web API
 
 ## Please note
 1. This project uses a pre-release build of Orleans for .NET Core, so you will need to add the following to your NuGet feeds list:
