@@ -1,6 +1,11 @@
 # ToasterService
 An example of embedding an Orleans silo in the same process as an ASP.NET Web API
 
+The proposal being that this be provided as an add-on to ASP.NET Core:
+`Install-Package Orleans.AspNetCore`
+
+Installing said package would also create scaffolding for examples grains similar to in this demo project.
+
 ## Please note
 1. This project uses a pre-release build of Orleans for .NET Core, so you will need to add the following to your NuGet feeds list:
 `https://dotnet.myget.org/F/orleans-prerelease/api/v3/index.json`
