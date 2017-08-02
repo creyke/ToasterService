@@ -1,13 +1,13 @@
 ﻿using Orleans;
 using Orleans.Concurrency;
 using System.Threading.Tasks;
-using ToasterService.Interfaces.Controllers.Toaster;
-using ToasterService.Silo.Grains.Toaster;
+using ToasterService.Api.Interfaces;
+using ToasterService.Api.Model;
 
-namespace ToasterService.Silo.Controllers.Toaster
+namespace ToasterService.Api.Grains
 {
     [StatelessWorker]
-    public class ToasterControllerGrain : IToasterControllerGrain
+    public class ToasterControllerGrain : Grain, IToasterControllerGrain
     {
         public async Task<ToastMakingResult> MakeToast(int toasterId)
         {

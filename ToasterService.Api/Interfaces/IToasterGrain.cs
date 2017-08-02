@@ -1,8 +1,8 @@
 ﻿using Orleans;
 using System.Threading.Tasks;
-using ToasterService.Interfaces.Controllers.Toaster;
+using ToasterService.Api.Model;
 
-namespace ToasterService.Silo.Grains.Toaster
+namespace ToasterService.Api.Interfaces
 {
     public interface IToasterGrain : IGrainWithIntegerKey
     {

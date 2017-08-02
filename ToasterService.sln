@@ -3,11 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToasterService.Interfaces", "ToasterService.Interfaces\ToasterService.Interfaces.csproj", "{A1F5C93E-7161-46EE-8CE4-3547C60C08D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToasterService.Api", "ToasterService.Api\ToasterService.Api.csproj", "{5AB58466-DB2D-4DEA-BD9C-A7D6F60973F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToasterService.Silo", "ToasterService.Silo\ToasterService.Silo.csproj", "{60B94ED7-FBCE-4786-962D-8C53718F5033}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToasterService.Api", "ToasterService.Api\ToasterService.Api.csproj", "{5AB58466-DB2D-4DEA-BD9C-A7D6F60973F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orleans.AspNetCore", "Orleans.AspNetCore\Orleans.AspNetCore.csproj", "{D1E179D9-586F-42A5-B212-7D24C451C58C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,18 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A1F5C93E-7161-46EE-8CE4-3547C60C08D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A1F5C93E-7161-46EE-8CE4-3547C60C08D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A1F5C93E-7161-46EE-8CE4-3547C60C08D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A1F5C93E-7161-46EE-8CE4-3547C60C08D3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{60B94ED7-FBCE-4786-962D-8C53718F5033}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{60B94ED7-FBCE-4786-962D-8C53718F5033}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{60B94ED7-FBCE-4786-962D-8C53718F5033}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{60B94ED7-FBCE-4786-962D-8C53718F5033}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5AB58466-DB2D-4DEA-BD9C-A7D6F60973F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5AB58466-DB2D-4DEA-BD9C-A7D6F60973F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AB58466-DB2D-4DEA-BD9C-A7D6F60973F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AB58466-DB2D-4DEA-BD9C-A7D6F60973F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1E179D9-586F-42A5-B212-7D24C451C58C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1E179D9-586F-42A5-B212-7D24C451C58C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1E179D9-586F-42A5-B212-7D24C451C58C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1E179D9-586F-42A5-B212-7D24C451C58C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

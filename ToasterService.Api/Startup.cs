@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Orleans;
+using Orleans.AspNetCore.Extensions;
 
 namespace ToasterService.Api
 {
@@ -21,9 +21,6 @@ namespace ToasterService.Api
                 .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
-
-            // Connect to Orleans.
-            GrainClient.Initialize();
         }
 
         public IConfigurationRoot Configuration { get; }
@@ -33,6 +30,9 @@ namespace ToasterService.Api
         {
             // Add framework services.
             services.AddMvc();
+
+            // Add orleans.
+            services.AddOrleans();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

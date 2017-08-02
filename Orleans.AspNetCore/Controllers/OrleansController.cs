@@ -1,8 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Orleans;
 using System;
 
-namespace ToasterService.Api.Controllers
+namespace Orleans.AspNetCore.Controllers
 {
     public abstract class OrleansController<TStatelessWorkerController> : Controller where TStatelessWorkerController : IGrainWithGuidKey
     {

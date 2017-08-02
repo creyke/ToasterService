@@ -1,5 +1,7 @@
-﻿using System.Threading.Tasks;
-using ToasterService.Interfaces.Controllers.Toaster;
+﻿using Orleans.AspNetCore.Controllers;
+using System.Threading.Tasks;
+using ToasterService.Api.Interfaces;
+using ToasterService.Api.Model;
 
 namespace ToasterService.Api.Controllers
 {

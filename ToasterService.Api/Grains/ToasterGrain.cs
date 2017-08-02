@@ -1,7 +1,8 @@
 ﻿using System.Threading.Tasks;
-using ToasterService.Interfaces.Controllers.Toaster;
+using ToasterService.Api.Interfaces;
+using ToasterService.Api.Model;
 
-namespace ToasterService.Silo.Grains.Toaster
+namespace ToasterService.Grains.Interfaces
 {
     public class ToasterGrain : IToasterGrain
     {
