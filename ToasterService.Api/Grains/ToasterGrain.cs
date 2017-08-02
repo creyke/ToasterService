@@ -1,14 +1,15 @@
-﻿using System.Threading.Tasks;
+﻿using Orleans;
+using System.Threading.Tasks;
 using ToasterService.Api.Interfaces;
 using ToasterService.Api.Model;
 
 namespace ToasterService.Grains.Interfaces
 {
-    public class ToasterGrain : IToasterGrain
+    public class ToasterGrain : Grain<Toaster>, IToasterGrain
     {
-        public Task<ToastMakingResult> MakeSomeToast(int toasterId)
+        public Task<Toaster> Get()
         {
-            return Task.FromResult(new ToastMakingResult());
+            return Task.FromResult(State);
         }
     }
 }

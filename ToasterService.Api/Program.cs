@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Orleans.AspNetCore;
 
 namespace ToasterService.Api
 {
@@ -12,6 +13,12 @@ namespace ToasterService.Api
     {
         public static void Main(string[] args)
         {
+            var orleansHost = new OrleansHostBuilder()
+                .UseStartup<OrleansStartup>()
+                .Build();
+
+            orleansHost.Run();
+            
             var host = new WebHostBuilder()
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())

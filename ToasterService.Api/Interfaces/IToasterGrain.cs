@@ -6,6 +6,6 @@ namespace ToasterService.Api.Interfaces
 {
     public interface IToasterGrain : IGrainWithIntegerKey
     {
-        Task<ToastMakingResult> MakeSomeToast(int toasterId);
+        Task<Toaster> Get();
     }
 }

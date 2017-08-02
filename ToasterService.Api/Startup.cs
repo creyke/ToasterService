@@ -31,8 +31,8 @@ namespace ToasterService.Api
             // Add framework services.
             services.AddMvc();
 
-            // Add orleans.
-            services.AddOrleans();
+            // Add orleans client.
+            services.AddOrleansClient();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

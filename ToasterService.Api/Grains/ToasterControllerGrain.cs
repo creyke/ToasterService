@@ -9,9 +9,9 @@ namespace ToasterService.Api.Grains
     [StatelessWorker]
     public class ToasterControllerGrain : Grain, IToasterControllerGrain
     {
-        public async Task<ToastMakingResult> MakeToast(int toasterId)
+        public async Task<Toaster> Get(int toasterId)
         {
-            return await GrainClient.GrainFactory.GetGrain<IToasterGrain>(toasterId).MakeSomeToast(toasterId);
+            return await GrainClient.GrainFactory.GetGrain<IToasterGrain>(toasterId).Get();
         }
     }
 }
