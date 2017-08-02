@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System;
 
-namespace Orleans.AspNetCore.Controllers
+namespace Orleans.AspNetCore
 {
     public abstract class OrleansController<TStatelessWorkerController> : Controller where TStatelessWorkerController : IGrainWithGuidKey
     {

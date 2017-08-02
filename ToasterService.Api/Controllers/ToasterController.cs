@@ -1,4 +1,4 @@
-﻿using Orleans.AspNetCore.Controllers;
+﻿using Orleans.AspNetCore;
 using System.Threading.Tasks;
 using ToasterService.Api.Interfaces;
 using ToasterService.Api.Model;

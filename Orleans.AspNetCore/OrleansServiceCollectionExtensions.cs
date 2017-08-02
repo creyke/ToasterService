@@ -1,8 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
-namespace Orleans.AspNetCore.Extensions
+namespace Orleans.AspNetCore
 {
-    public static class MvcBuilderExtensions
+    public static class OrleansServiceCollectionExtensions
     {
         public static IServiceCollection AddOrleans(this IServiceCollection services)
         {
